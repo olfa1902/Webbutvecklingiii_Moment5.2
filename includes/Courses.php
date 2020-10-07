@@ -11,7 +11,7 @@ class Courses
 
         $this->db = new mysqli(DBHOST, DBUSER, DBPASS, DBDATABASE);
         if ($this->db->connect_errno > 0) {
-            die("Fel vid anslutning: " . $this->db->connect_error);
+            die("Error with connection: " . $this->db->connect_error);
         } 
     }
 
