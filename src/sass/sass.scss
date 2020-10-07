@@ -1,0 +1,39 @@
+ @import "colors";
+ @import "mixins";
+ 
+ /* Style inputs with type="text", select elements and textareas */
+ input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid $gray; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    @include button();
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: $green;
+  }
+
+  #courses button{
+    @include button();
+  }
+
+  #courses button:hover {
+    background-color: $green;
+  }
+
+  .course {
+    border: 2px outset;
+    border-radius: 6px;
+    background-color: $lightblue;
+    margin-bottom: 20px;
+  }
